@@ -1,7 +1,8 @@
 FROM python
 ADD requirements.txt /root
+ADD d /bin
+RUN chmod +x /bin/d
 RUN pip install -r /root/requirements.txt
 RUN apt-get update
-ENV dict="python /root/dictionary/dictionary.py"
 ENTRYPOINT ["tail"]
 CMD ["-f","/dev/null"]
