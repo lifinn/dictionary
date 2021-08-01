@@ -1,4 +1,4 @@
-FROM python
+FROM python:3-slim
 ADD requirements.txt /root
 RUN pip install -r /root/requirements.txt
 RUN apt-get update && pip-review --auto
