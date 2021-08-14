@@ -1,10 +1,11 @@
 # Dictionary
 
 Dictionary is built to search collins dictionary and the origin of the word quickly. It also offers additional features to store the word searched before and extracts the recent examples on the web from Merriam-Webster.
-1.  Pull the image and mount config and credentials for DynamoDB
+1.  Pull the image and mount *config* and *credentials* for DynamoDB
 ```bash
 docker run -d --name dict -v $HOME/.aws:/root/.aws finnli/dict:[latest tag]
 ```
+![AWS](example-aws.png)
 2. Enter the application
 ```bash
 docker exec -it dict sh
