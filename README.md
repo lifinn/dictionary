@@ -15,3 +15,4 @@ d [word] # retrieve explanations from collins and origin, store the data to Dyna
 d [word] [--d{elete}] # delete the word from DynamoDB 
 d [word] [--e{xample}] # retrieve examples from Merriam-Webster, but don't store the data
 ```
+![Parched](example-parched.png)
