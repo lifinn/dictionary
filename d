@@ -1,2 +1,2 @@
 #!/bin/sh
-python /root/dictionary.py "$@"
+python /root/dictionary.py
