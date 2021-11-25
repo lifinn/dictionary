@@ -4,8 +4,6 @@ RUN pip install -r /root/requirements.txt
 RUN pip-review --auto
 ADD dictionary.py /root
 ADD d /bin
-ADD dr /bin
-ADD de /bin
-RUN chmod +x /bin/d /bin/dr /bin/de 
-ENTRYPOINT ["tail"]
-CMD ["-f","/dev/null"]
+RUN chmod +x /bin/d
+#CMD ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["d"]
